@@ -7,11 +7,9 @@ class Story:
     To  make a story, pass a list of prompts, and the text
     of the template.
 
-        >>> s = Story(["noun", "verb"],
-        ...     "I love to {verb} a good {noun}.")
+        >>> s = Story(["noun", "verb"],"I love to {verb} a good {noun}.")
 
-    To generate text from a story, pass in a dictionary-like thing
-    of {prompt: answer, promp:answer):
+    To generate text from a story, pass in a dictionary-like thing of {prompt: answer, promp:answer):
 
         >>> ans = {"verb": "eat", "noun": "mango"}
         >>> s.generate(ans)
